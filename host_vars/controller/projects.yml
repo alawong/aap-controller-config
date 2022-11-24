@@ -1,0 +1,29 @@
+---
+controller_projects:
+  - name: Dispatch Project
+    organization: Default Organisation
+    scm_branch: main
+    scm_clean: 'no'
+    scm_delete_on_update: 'no'
+    scm_type: git
+    scm_update_on_launch: 'yes'
+    scm_url: https://github.com/alawong/controller-dispatch.git
+    credential: GitHub Credential
+  - name: Default Organisation Config
+    organization: Default Organisation
+    scm_branch: main
+    scm_clean: 'no'
+    scm_delete_on_update: 'no'
+    scm_type: git
+    scm_update_on_launch: 'yes'
+    scm_url: https://github.com/alawong/controller-org-default.git
+    credential: GitHub Credential
+  - name: Database Organisation Config
+    organization: Database Organisation
+    scm_branch: main
+    scm_clean: 'no'
+    scm_delete_on_update: 'no'
+    scm_type: git
+    scm_update_on_launch: 'yes'
+    scm_url: https://github.com/alawong/controller-org-database.git
+    credential: GitHub Credential

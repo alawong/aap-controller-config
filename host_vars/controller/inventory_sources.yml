@@ -1,0 +1,26 @@
+---
+controller_inventory_sources:
+  - name: Default Controller Inventory Source
+    source: scm
+    inventory: Controller - Default Inventory
+    description: created by Ansible controller
+    overwrite: true
+    update_on_launch: true
+    source_project: Default Organisation Config
+    source_path: inventory
+  - name: Database Inventory Source
+    source: scm
+    inventory: Controller - Database Inventory
+    description: created by Ansible controller
+    overwrite: true
+    update_on_launch: true
+    source_project: Database Organisation Config
+    source_path: inventory
+  - name: OpenTLC Inventory Source
+    source: scm
+    inventory: OpenTLC Inventory
+    description: Inventory for OpenTLC Lab Environment
+    overwrite: true
+    update_on_launch: true
+    source_project: Default Organisation Config
+    source_path: inventories/opentlc_inventory

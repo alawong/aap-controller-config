@@ -1,0 +1,5 @@
+---
+controller_execution_environments:
+  - name: "Controller EE"
+    image: ansible-hub.example.com/controller-ee-rhel8:v1.0
+    credential: Automation Hub Container Registry

@@ -1,0 +1,45 @@
+---
+controller_workflows:
+  - name: Controller Configuration - Default Organisation Workflow
+    description: Workflow to update Automation Controller's Default Org
+    # webhook_service: github
+    # webhook_credential: GitHub PAT Credential
+    organization: Default Organisation
+    workflow_nodes:
+      - identifier: Project Sync
+        unified_job_template: 
+          name: Default Organisation Config
+          organization:
+            name: Default Organisation
+          type: project
+        related:
+          success_nodes:
+            - identifier: Default Org Update Template
+      - identifier: Default Org Update Template
+        unified_job_template:
+          name: Controller Configuration - Default Organisation Job
+          organization:
+            name: Default Organisation
+          type: job_template
+
+  - name: Controller Configuration - Database Organisation Workflow
+    description: Workflow to update Automation Controller's Database Org
+    # webhook_service: github 
+    # webhook_credential: GitHub PAT Credential
+    organization: Database Organisation
+    workflow_nodes:
+      - identifier: Project Sync
+        unified_job_template: 
+          name: Database Organisation Config
+          organization:
+            name: Database Organisation
+          type: project
+        related:
+          success_nodes:
+            - identifier: Database Org Update Template
+      - identifier: Database Org Update Template
+        unified_job_template:
+          name: Controller Configuration - Database Organisation Job
+          organization:
+            name: Default Organisation
+          type: job_template

@@ -1,0 +1,7 @@
+controller_organizations:
+- name: Default Organisation
+  description: Default administrator organisation
+- name: Database Organisation
+  description: Database administrator organisation
+- name: Satellite Organisation
+  description: Satellite admin organisation

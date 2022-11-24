@@ -1,0 +1,22 @@
+[automation_controller]
+ansible-ctrl ansible_host=ansible-ctrl.example.com
+
+[automation_hub]
+ansible-hub ansible_host=ansible-hub.example.com
+
+[load_balancers]
+frontend ansible_host=frontend.example.com
+
+[app_servers]
+app-01 ansible_host=app-01.example.com
+app-02 ansible_host=app-02.example.com
+
+[database_servers]
+database-01 ansible_host=database-01.example.com
+
+[all:vars]
+timeout=60
+ansible_user=cloud-user
+ansible_ssh_private_key_file="~/.ssh/lbf6d5key.pem"
+ansible_ssh_common_args="-o StrictHostKeyChecking=no"
+ansible_become=true
