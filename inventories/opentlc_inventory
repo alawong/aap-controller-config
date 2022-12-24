@@ -17,6 +17,6 @@ database-01 ansible_host=database-01.example.com
 [all:vars]
 timeout=60
 ansible_user=cloud-user
-ansible_ssh_private_key_file="~/.ssh/lbf6d5key.pem"
+ansible_ssh_private_key_file="~/.ssh/xxxxkey.pem"
 ansible_ssh_common_args="-o StrictHostKeyChecking=no"
 ansible_become=true

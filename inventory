@@ -1,1 +1,2 @@
-controller ansible_host=ansible-ctrl.lbf6d5.dynamic.opentlc.com ansible_connection=local
+controller ansible_host=ansible-ctrl.xxxxx.dynamic.opentlc.com ansible_connection=local
+pah ansible_host=ansible-hub.xxxxx.dynamic.opentlc.com
