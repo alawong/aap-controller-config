@@ -1,0 +1,19 @@
+---
+controller_templates:
+  - name: Controller Configuration - Default Organisation Job
+    job_type: run
+    inventory: Controller - Default Inventory
+    project: Dispatch Project
+    playbook: controller_config.yml
+    execution_environment: Controller EE
+    credentials:
+      - Ansible Vault Password
+
+  - name: Controller Configuration - Database Organisation Job
+    job_type: run
+    inventory: Controller - Database Inventory
+    project: Dispatch Project
+    playbook: controller_config.yml
+    execution_environment: Controller EE
+    credentials:
+      - Ansible Vault Password
